@@ -4,13 +4,17 @@
   "description": "27 weekly",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d src"
   },
   "author": "Łukasz Topa",
   "license": "ISC",
+	"homepage": "https://luris993.github.io/ESLA",
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
     "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
