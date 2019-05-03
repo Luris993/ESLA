@@ -1,0 +1,112 @@
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+  font-size: 10px; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+body {
+  background-image: linear-gradient(to right bottom, #025690, #ffffff);
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden; }
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-100%); } }
+
+@keyframes slideInFromDown {
+  0% {
+    transform: translateY(100%); }
+  100% {
+    transform: translateY(0); } }
+
+.page_header_animation {
+  animation: 0.7s ease-out 0s 1 slideInFromLeft; }
+
+.page_header_back {
+  animation: 0.7s ease-out 0s 1 slideInFromRight; }
+
+.page_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  padding-bottom: 50px; }
+  .page_header .hero_logo {
+    height: 50vh; }
+  .page_header .nav {
+    width: 40vw; }
+    .page_header .nav .header_nav {
+      display: flex;
+      justify-content: space-around; }
+      .page_header .nav .header_nav .header_nav_item {
+        list-style: none; }
+        .page_header .nav .header_nav .header_nav_item .header_nav_link {
+          font-size: 2rem;
+          font-weight: 600;
+          color: #031c2b;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          text-decoration: none;
+          padding: 12px; }
+          .page_header .nav .header_nav .header_nav_item .header_nav_link:hover {
+            color: #FFFFFF; }
+        .page_header .nav .header_nav .header_nav_item .active {
+          color: #FFFFFF;
+          background: #031c2b; }
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s; }
+
+nav ul li a {
+  position: relative;
+  z-index: 1; }
+
+nav ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #031c2b;
+  visibility: none;
+  opacity: 0;
+  z-index: -1; }
+
+nav ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%; }
+
+.page_footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  animation: 0.7s ease-out 0s 1 slideInFromDown; }
+  .page_footer a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #031c2b;
+    font-weight: 600;
+    letter-spacing: 0; }
