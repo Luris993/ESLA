@@ -145,9 +145,14 @@ nav ul li a:hover:after {
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (max-width: 1440px) and (min-width: 992px) { 
+@media (min-width: 1440px) { 
 	
-
+	.page_header {
+		.nav {
+			width: 40vw;
+		}
+	}
+	
 }
 
 
