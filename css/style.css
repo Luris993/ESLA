@@ -111,3 +111,6 @@ nav ul li a:hover:after {
     letter-spacing: 0; }
 
 /* Medium devices (desktops, 992px and up) */
+@media (min-width: 1440px) {
+  .page_header .nav {
+    width: 40vw; } }
