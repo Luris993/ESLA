@@ -136,4 +136,6 @@ nav ul li a:hover:after {
   .content .content_item .content_item_text {
     font-size: 1.7rem; }
   .page_header .fixed_container .nav .header_nav_item .header_nav_link {
-    font-size: 1.4rem; } }
+    font-size: 1.4rem; }
+  .content {
+    padding: 105px 0 0 0; } }

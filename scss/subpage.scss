@@ -183,16 +183,20 @@ nav ul li a:hover:after {
 		}
 	}
 	
-	.page_header {
+	.page_header {	
 		.fixed_container {
 			.nav {
-			.header_nav_item {
-				.header_nav_link {
+				.header_nav_item {
+					.header_nav_link {
 					font-size: 1.4rem;
+					}
 				}
 			}
 		}
-		}
+	}
+	
+	.content {
+		padding: 105px 0 0 0;
 	}
 		
 }
