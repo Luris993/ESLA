@@ -26,9 +26,9 @@ body {
   height: 100vh;
   padding-bottom: 50px; }
   .page_header .hero_logo {
-    height: 40vh; }
+    height: 35vh; }
   .page_header .nav {
-    width: 50vw; }
+    width: 40vw; }
     .page_header .nav .header_nav {
       display: flex;
       justify-content: space-around; }
@@ -94,6 +94,10 @@ nav ul li a:hover:after {
     letter-spacing: 0; }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 1440px) {
+@media (max-width: 1440px) {
+  .page_header .hero_logo {
+    height: 30vh; }
   .page_header .nav {
-    width: 40vw; } }
+    width: 70vh; }
+    .page_header .nav .header_nav .header_nav_item .header_nav_link {
+      font-size: 1.4rem; } }

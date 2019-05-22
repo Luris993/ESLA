@@ -32,10 +32,10 @@ body {
 	height: 100vh;
 	padding-bottom: 50px;
 	.hero_logo {
-		height: 40vh;
+		height: 35vh;
 	}
 	.nav {
-		width: 50vw;
+		width: 40vw;
 		.header_nav {
 			display: flex;
 			justify-content: space-around;
@@ -116,11 +116,21 @@ nav ul li a:hover:after {
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 1440px) { 
+@media (max-width: 1440px) { 
 	
 	.page_header {
+		.hero_logo {
+			height: 30vh;
+		}
 		.nav {
-			width: 40vw;
+			width: 70vh;
+			.header_nav {
+				.header_nav_item {
+					.header_nav_link {
+						font-size: 1.4rem;
+					}
+				}
+			}
 		}
 	}
 	
