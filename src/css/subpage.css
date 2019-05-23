@@ -45,7 +45,7 @@ body {
     .page_header .nav .header_nav .header_nav_item {
       list-style-type: none; }
       .page_header .nav .header_nav .header_nav_item .header_nav_link {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         font-weight: 400;
         color: #031c2b;
         letter-spacing: 1px;
@@ -96,13 +96,13 @@ nav ul li a:hover:after {
   max-width: 700px;
   min-height: 100vh; }
   .content .content_header {
-    font-size: 6.1rem;
+    font-size: 5rem;
     color: #031c2b;
     text-transform: uppercase;
     padding: 5px 0;
     margin: 0; }
   .content .content_item .content_item_text {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #031c2b;
     line-height: 1.45; }
 
