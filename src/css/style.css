@@ -26,9 +26,9 @@ body {
   height: 100vh;
   padding-bottom: 50px; }
   .page_header .hero_logo {
-    height: 30vh; }
+    height: 270px; }
   .page_header .nav {
-    width: 35vw; }
+    width: 680px; }
     .page_header .nav .header_nav {
       display: flex;
       justify-content: space-around; }
@@ -96,8 +96,8 @@ nav ul li a:hover:after {
 /* Medium devices (desktops, 992px and up) */
 @media (max-width: 1440px) {
   .page_header .hero_logo {
-    height: 30vh; }
+    height: 270px; }
   .page_header .nav {
-    width: 45vw; }
+    width: 680px; }
     .page_header .nav .header_nav .header_nav_item .header_nav_link {
       font-size: 1.4rem; } }
