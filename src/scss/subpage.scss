@@ -33,7 +33,7 @@ body {
 	height: 50vh;
 	opacity: 0.2;
 	position: sticky;
-	-webkit-position: -webkit-sticky;
+	position: -webkit-sticky;
 	top: 105px;
 }
 
@@ -45,7 +45,7 @@ body {
 	margin: 180px 0 0 0;
 	.fixed_container {
 		position: sticky;
-		-webkit-position: -webkit-sticky;
+		position: -webkit-sticky;
 		top: 190px;
 	}
 	.nav {
