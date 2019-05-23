@@ -10,7 +10,7 @@ html {
 body {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1900px;
+  max-width: 1600px;
   padding-right: 10px;
   padding-left: 10px;
   background: #ffffff;
@@ -45,7 +45,7 @@ body {
     .page_header .nav .header_nav .header_nav_item {
       list-style-type: none; }
       .page_header .nav .header_nav .header_nav_item .header_nav_link {
-        font-size: 1.7rem;
+        font-size: 1.4rem;
         font-weight: 400;
         color: #031c2b;
         letter-spacing: 1px;
@@ -102,7 +102,7 @@ nav ul li a:hover:after {
     padding: 5px 0;
     margin: 0; }
   .content .content_item .content_item_text {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     color: #031c2b;
     line-height: 1.45; }
 
@@ -130,11 +130,7 @@ nav ul li a:hover:after {
   color: #031c2b; }
 
 @media (max-width: 1440px) and (min-width: 992px) {
-  .content .content_header {
-    font-size: 5rem; }
-  .content .content_item .content_item_text {
-    font-size: 1.7rem; }
-  .page_header .fixed_container .nav .header_nav_item .header_nav_link {
-    font-size: 1.4rem; }
+  body {
+    max-width: 1300px; }
   .content {
     padding: 105px 0 0 0; } }
