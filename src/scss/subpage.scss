@@ -44,6 +44,7 @@ body {
 	margin: 180px 0 0 0;
 	.fixed_container {
 		position: sticky;
+		-webkit-position: -webkit-sticky;
 		top: 190px;
 	}
 	.nav {
