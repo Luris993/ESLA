@@ -35,6 +35,7 @@ body {
   margin: 180px 0 0 0; }
   .page_header .fixed_container {
     position: sticky;
+    -webkit-position: -webkit-sticky;
     top: 190px; }
   .page_header .nav .header_nav {
     display: flex;
