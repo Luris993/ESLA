@@ -26,16 +26,16 @@ body {
   height: 100vh;
   padding-bottom: 50px; }
   .page_header .hero_logo {
-    height: 35vh; }
+    height: 30vh; }
   .page_header .nav {
-    width: 40vw; }
+    width: 35vw; }
     .page_header .nav .header_nav {
       display: flex;
       justify-content: space-around; }
       .page_header .nav .header_nav .header_nav_item {
         list-style: none; }
         .page_header .nav .header_nav .header_nav_item .header_nav_link {
-          font-size: 1.8rem;
+          font-size: 1.4rem;
           font-weight: 400;
           color: #031c2b;
           letter-spacing: 1px;
@@ -98,6 +98,6 @@ nav ul li a:hover:after {
   .page_header .hero_logo {
     height: 30vh; }
   .page_header .nav {
-    width: 70vh; }
+    width: 45vw; }
     .page_header .nav .header_nav .header_nav_item .header_nav_link {
       font-size: 1.4rem; } }
