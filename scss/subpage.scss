@@ -42,11 +42,10 @@ body {
 }
 
 .page_header {
-	margin: 180px 0 0 0;
 	.fixed_container {
 		position: sticky;
 		position: -webkit-sticky;
-		top: 190px;
+		top: 165px;
 	}
 	.nav {
 		.header_nav {
@@ -55,6 +54,7 @@ body {
 			justify-content: space-around;
 			height: 200px;
 			padding: 0;
+			margin: 0;
 			.header_nav_item {
 				list-style-type: none;
 				.header_nav_link {
@@ -124,7 +124,7 @@ nav ul li a:hover:after {
 		font-size: 5rem;
 		color: #031c2b;
 		text-transform: uppercase;
-		padding: 5px 0;
+		padding: 0 0 12px 0;
 		margin: 0;
 	}
 	.content_item {
@@ -153,14 +153,19 @@ nav ul li a:hover:after {
 
 .contact {
 	.contact_item {
+		.content_item_text {
+			font-size: 1.4rem;
+			color: #031c2b;
+			line-height: 1.45;
+		}
 		.contact_item_text {
 			p {
 				display: inline-block;
-				font-size: 2rem;
+				font-size: 1.4rem;
 				color: #031c2b;
 			}
 			i {
-				font-size: 2rem;
+				font-size: 1.4rem;
 				padding: 0 10px 0 0;
 				display: inline-block;
 				color: #031c2b;
@@ -176,7 +181,7 @@ nav ul li a:hover:after {
 	}
 	
 	.content {
-		padding: 105px 0 0 0;
+		padding: 90px 0 0 0;
 	}
 		
 }
