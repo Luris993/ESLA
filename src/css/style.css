@@ -28,7 +28,7 @@ body {
   .page_header .hero_logo {
     height: 270px; }
   .page_header .nav {
-    width: 680px; }
+    width: 625px; }
     .page_header .nav .header_nav {
       display: flex;
       justify-content: space-around; }
@@ -98,6 +98,6 @@ nav ul li a:hover:after {
   .page_header .hero_logo {
     height: 270px; }
   .page_header .nav {
-    width: 680px; }
+    width: 625px; }
     .page_header .nav .header_nav .header_nav_item .header_nav_link {
       font-size: 1.4rem; } }
