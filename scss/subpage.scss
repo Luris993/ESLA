@@ -11,10 +11,10 @@ html {
 
 body {
 	margin-right: auto;
-  margin-left:  auto;
-  max-width: 1400px;
-  padding-right: 10px;
-  padding-left:  10px;
+	margin-left:  auto;
+	max-width: 1400px;
+	padding-right: 10px;
+	padding-left:  10px;
 	background: #ffffff;
 	display: flex;
 	flex-flow: wrap;
@@ -172,6 +172,13 @@ nav ul li a:hover:after {
 			}
 		}
 	}
+}
+
+@media (min-width: 1920px) {
+	body {
+		max-width: 1800px;
+	}
+
 }
 
 @media (max-width: 1440px) and (min-width: 992px) { 
