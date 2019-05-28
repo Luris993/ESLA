@@ -136,9 +136,9 @@ nav ul li a:hover:after {
   display: inline-block;
   color: #031c2b; }
 
-@media (min-width: 1920px) {
+@media (min-width: 3656px) {
   body {
-    max-width: 1800px; } }
+    max-width: 2000px; } }
 
 @media (max-width: 1440px) and (min-width: 992px) {
   body {
