@@ -176,7 +176,21 @@ nav ul li a:hover:after {
 
 @media (min-width: 3656px) {
 	body {
-		max-width: 2000px;
+		max-width: 2200px;
+	}
+
+	.content {
+		padding: 160px 0 0 0;
+	}
+
+	.background_logo {
+		top: 175px;
+	}
+
+	.page_header {
+		.fixed_container {
+			top: 235px;
+		}
 	}
 
 }
@@ -190,6 +204,36 @@ nav ul li a:hover:after {
 	.content {
 		padding: 90px 0 0 0;
 	}
-		
 }
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
+
+	body {
+		padding-right: 30px;
+		padding-left:  30px;
+	}
+
+	.page_header {
+		.nav {
+			.header_nav {
+				.header_nav_item {
+					.header_nav_link {
+					}
+				}
+			}
+		}
+	}	
+
+	.content {
+		.content_header {
+			font-size: 3.2rem;
+		}
+	}
+
+	.background_logo {
+		display: none;
+		} 
+	}
+		
+
 
