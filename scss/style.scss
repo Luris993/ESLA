@@ -15,6 +15,22 @@ body {
 	overflow: hidden;
 }
 
+.toggle_btn_container {
+	position: absolute;
+	top: 40px;
+	display: none;
+	.toggle_btn {
+		background: #031c2b;
+		border: 3px solid #031c2b;
+		border-radius: 100px;
+		i {
+			font-size: 2rem;
+			color: #FFFFFF;
+			padding: 3px;
+		}
+	}
+}
+
 
 .page_header_animation {
 	animation: 0.7s ease-out 0s 1 slideInFromLeft;
@@ -132,9 +148,46 @@ nav ul li a:hover:after {
 				}
 			}
 		}
-	}
-	
+	}	
 }
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
+
+	.page_header {
+		.hero_logo {
+			height: 150px;
+
+		}
+		.toggle_btn_container {
+			display: block;
+		}
+		.nav {
+			display: flex;
+			width: 100vw;
+			justify-content: center;
+			align-items: center;
+			.header_nav {
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				height: 200px;
+				padding: 0;
+			}
+		}
+		.nav_close {
+			display: none;
+		}
+	}
+}
+
+	.hero_container_toggle {
+		display: none;
+	}
+
+
+	.nav_open {
+		display: block;
+	}
 
 
 

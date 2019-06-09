@@ -5,8 +5,9 @@ const recommendationsButton = elementHeader.querySelector('.nav .recommendations
 const teamButton = elementHeader.querySelector('.nav .team_btn');
 const contactButton = elementHeader.querySelector('.nav .contact_btn');
 const footer = document.querySelector('.page_footer');
-
-
+const toggleBtn = elementHeader.querySelector('.toggle_btn');
+const heroContainer = elementHeader.querySelector('.hero_container');
+const nav = elementHeader.querySelector('.nav');
 
 aboutButton.addEventListener('click', function(e) { 
 	e.preventDefault();
@@ -70,4 +71,12 @@ contactButton.addEventListener('click', function(e) {
 	elementHeader.addEventListener('animationend', function() {
 		window.location = href;
 	})
+});
+
+toggleBtn.addEventListener('click', function() {
+
+	heroContainer.classList.toggle('hero_container_toggle');
+	nav.classList.toggle('nav_close');
+	nav.classList.toggle('nav_open');
+
 });
