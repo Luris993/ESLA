@@ -20,3 +20,12 @@ homeButton.addEventListener('click', function(e) {
 		window.location = 'index.html';
 	});
 });
+
+const menuBtn = document.querySelector('.toggle_btn');
+
+menuBtn.addEventListener('click', function() {
+
+	pageContent.classList.toggle('content_toggle');
+	pageHeader.classList.toggle('page_header_display');
+
+});

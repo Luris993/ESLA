@@ -8,16 +8,18 @@ html {
   box-sizing: inherit; }
 
 body {
+  background: #ffffff;
+  height: 100%; }
+
+.page_container {
   margin-right: auto;
   margin-left: auto;
   max-width: 1400px;
   padding-right: 10px;
   padding-left: 10px;
-  background: #ffffff;
   display: flex;
   flex-flow: wrap;
-  justify-content: space-around;
-  height: 100%; }
+  justify-content: space-around; }
 
 .text_animation {
   animation: 0.7s ease-out 0s 1 opacityAnimation; }
@@ -31,6 +33,20 @@ body {
 
 .page_header_animation {
   animation: 0.4s ease-out 0s 1 opacityAnimationHeader; }
+
+.responsive_menu {
+  width: 100%;
+  justify-content: center;
+  padding: 40px 0 0 0;
+  display: none; }
+  .responsive_menu .toggle_btn {
+    background: #031c2b;
+    border: 3px solid #031c2b;
+    border-radius: 100px; }
+    .responsive_menu .toggle_btn i {
+      font-size: 2rem;
+      color: #FFFFFF;
+      padding: 3px; }
 
 .page_header .fixed_container {
   position: sticky;
@@ -120,6 +136,10 @@ nav ul li a:hover:after {
     font-weight: 400;
     letter-spacing: 0; }
 
+.page_footer_nav {
+  position: absolute;
+  bottom: 0; }
+
 .contact .contact_item .content_item_text {
   font-size: 1.4rem;
   color: #031c2b;
@@ -137,7 +157,7 @@ nav ul li a:hover:after {
   color: #031c2b; }
 
 @media (min-width: 3656px) {
-  body {
+  .page_container {
     max-width: 2200px; }
   .content {
     padding: 160px 0 0 0; }
@@ -147,16 +167,37 @@ nav ul li a:hover:after {
     top: 235px; } }
 
 @media (max-width: 1440px) and (min-width: 992px) {
-  body {
+  .page_container {
     max-width: 1300px; }
   .content {
     padding: 90px 0 0 0; } }
 
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
-  body {
+  .page_container {
     padding-right: 30px;
     padding-left: 30px; }
-  .content .content_header {
-    font-size: 3.2rem; }
+  .page_header {
+    position: absolute;
+    top: 30%;
+    height: 70vh;
+    width: 100%;
+    text-align: center;
+    display: none; }
+  .content {
+    padding: 50px 0 0 0; }
+    .content .content_header {
+      font-size: 3.2rem; }
+  .responsive_menu {
+    display: flex; }
+    .responsive_menu .toggle_btn {
+      display: inline-block; }
+      .responsive_menu .toggle_btn .visible_btn {
+        display: none; }
   .background_logo {
     display: none; } }
+
+.content_toggle {
+  display: none; }
+
+.page_header_display {
+  display: inline-block; }

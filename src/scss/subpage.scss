@@ -10,19 +10,20 @@ html {
 }
 
 body {
+	background: #ffffff;
+	height: 100%;
+}
+
+.page_container {
 	margin-right: auto;
 	margin-left:  auto;
 	max-width: 1400px;
 	padding-right: 10px;
 	padding-left:  10px;
-	background: #ffffff;
 	display: flex;
 	flex-flow: wrap;
 	justify-content: space-around;
-	height: 100%;
 }
-
-
 
 .text_animation {
 	animation: 0.7s ease-out 0s 1 opacityAnimation;
@@ -41,7 +42,26 @@ body {
 	animation: 0.4s ease-out 0s 1 opacityAnimationHeader;
 }
 
+.responsive_menu {
+	width: 100%;
+	justify-content: center;
+	padding: 40px 0 0 0;
+	display: none;
+	.toggle_btn {
+		background: #031c2b;
+		border: 3px solid #031c2b;
+		border-radius: 100px;
+		i {
+			font-size: 2rem;
+			color: #FFFFFF;
+			padding: 3px;
+		}
+	}
+	
+}
+
 .page_header {
+
 	.fixed_container {
 		position: sticky;
 		position: -webkit-sticky;
@@ -53,7 +73,7 @@ body {
 			flex-direction: column;
 			justify-content: space-around;
 			height: 200px;
-			padding: 0;
+			padding: 0; 
 			margin: 0;
 			.header_nav_item {
 				list-style-type: none;
@@ -75,7 +95,7 @@ body {
 				}
 			}
 		}
-	}
+	} 
 }
 
 nav ul li a,
@@ -139,7 +159,7 @@ nav ul li a:hover:after {
 
 .page_footer {
 	align-self: flex-end;
-  width: 100%;
+  	width: 100%;
 	margin: auto auto 0 auto;
 	p {
 		font-size: 1.4rem;
@@ -150,6 +170,13 @@ nav ul li a:hover:after {
 		letter-spacing: 0;
 	}
 }
+
+.page_footer_nav {
+	position: absolute;
+	bottom: 0;
+}
+
+
 
 .contact {
 	.contact_item {
@@ -175,7 +202,7 @@ nav ul li a:hover:after {
 }
 
 @media (min-width: 3656px) {
-	body {
+	.page_container {
 		max-width: 2200px;
 	}
 
@@ -195,9 +222,11 @@ nav ul li a:hover:after {
 
 }
 
+// *******************  MEDIA QUERIES ******************************** 
+
 @media (max-width: 1440px) and (min-width: 992px) { 
 	
-	body {
+	.page_container {
 		max-width: 1300px;
 	}
 	
@@ -208,32 +237,50 @@ nav ul li a:hover:after {
 
 @media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
 
-	body {
+	.page_container {
 		padding-right: 30px;
 		padding-left:  30px;
 	}
 
 	.page_header {
-		.nav {
-			.header_nav {
-				.header_nav_item {
-					.header_nav_link {
-					}
-				}
-			}
-		}
+		position: absolute;
+		top: 30%;
+		height: 70vh;
+		width: 100%;
+		text-align: center;
+		display: none;
 	}	
 
 	.content {
+		padding: 50px 0 0 0;
 		.content_header {
 			font-size: 3.2rem;
 		}
 	}
 
+	.responsive_menu {
+		display: flex;
+		.toggle_btn {
+			display: inline-block;
+			.visible_btn {
+				display: none;
+			}
+		}
+	}
+
 	.background_logo {
 		display: none;
-		} 
+	} 
+}
+
+	.content_toggle {
+		display: none;
 	}
+
+	.page_header_display {
+		display: inline-block;
+	}
+
 		
 
 
