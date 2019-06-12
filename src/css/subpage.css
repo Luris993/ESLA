@@ -42,11 +42,11 @@ body {
   .responsive_menu .toggle_btn {
     background: #031c2b;
     border: 3px solid #031c2b;
-    border-radius: 100px; }
+    border-radius: 100px;
+    width: 50px; }
     .responsive_menu .toggle_btn i {
       font-size: 2rem;
-      color: #FFFFFF;
-      padding: 3px; }
+      color: #FFFFFF; }
 
 .page_header .fixed_container {
   position: sticky;
