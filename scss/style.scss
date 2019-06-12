@@ -23,10 +23,16 @@ body {
 		background: #031c2b;
 		border: 3px solid #031c2b;
 		border-radius: 100px;
+		width: 50px;
+		.btn_close {
+			display: none;
+		}
+		.btn_open {
+			display: none;
+		}
 		i {
 			font-size: 2rem;
 			color: #FFFFFF;
-			padding: 3px;
 		}
 	}
 }
