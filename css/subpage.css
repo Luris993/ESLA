@@ -44,6 +44,10 @@ body {
     border: 3px solid #031c2b;
     border-radius: 100px;
     width: 50px; }
+    .responsive_menu .toggle_btn .btn_close {
+      display: none; }
+    .responsive_menu .toggle_btn .btn_open {
+      display: none; }
     .responsive_menu .toggle_btn i {
       font-size: 2rem;
       color: #FFFFFF; }

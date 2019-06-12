@@ -22,10 +22,14 @@ homeButton.addEventListener('click', function(e) {
 });
 
 const menuBtn = document.querySelector('.toggle_btn');
+const fa_bars = menuBtn.querySelector('.fa-bars');
+const fa_times = menuBtn.querySelector('.fa-times');
 
 menuBtn.addEventListener('click', function() {
 
+	
 	pageContent.classList.toggle('content_toggle');
 	pageHeader.classList.toggle('page_header_display');
-
+	fa_bars.classList.toggle('btn_open');
+	fa_times.classList.toggle('btn_close');
 });
