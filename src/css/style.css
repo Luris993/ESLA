@@ -119,7 +119,7 @@ nav ul li a:hover:after {
     .page_header .nav .header_nav .header_nav_item .header_nav_link {
       font-size: 1.4rem; } }
 
-@media only screen and (min-device-width: 360px) and (max-device-height: 640px) {
+@media only screen and (min-device-width: 360px) and (max-device-height: 900px) {
   .page_header .hero_logo {
     height: 150px; }
   .page_header .toggle_btn_container {
