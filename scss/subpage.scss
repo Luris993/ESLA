@@ -218,6 +218,7 @@ nav ul li a:hover:after {
 		margin: 0 auto;
 		img {
 			filter: drop-shadow(1px 1px 1px #222);
+			-webkit-filter: drop-shadow(1px 1px 1px #222);
 		}
 		.recommendations_gallery_row {
 			max-width: 300.5px;

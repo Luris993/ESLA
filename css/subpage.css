@@ -166,7 +166,8 @@ nav ul li a:hover:after {
   padding: 23px 0 0 0;
   margin: 0 auto; }
   #recommendations .recommendations_gallery img {
-    filter: drop-shadow(1px 1px 1px #222); }
+    filter: drop-shadow(1px 1px 1px #222);
+    -webkit-filter: drop-shadow(1px 1px 1px #222); }
   #recommendations .recommendations_gallery .recommendations_gallery_row {
     max-width: 300.5px;
     display: flex; }
