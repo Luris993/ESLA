@@ -142,6 +142,8 @@ nav ul li a:hover:after {
 .content {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	padding: 90px 0 0 0;
 	max-width: 700px;
 	min-height: 100vh;
@@ -207,23 +209,34 @@ nav ul li a:hover:after {
 }
 
 
+// *****************  RECOMMENDATION *************
+
 
 #recommendations {
 	.recommendations_gallery {
-		display: flex;
 		padding: 23px 0 0 0;
+		margin: 0 auto;
+		img {
+			filter: drop-shadow(1px 1px 1px #222);
+		}
 		.recommendations_gallery_row {
+			max-width: 300.5px;
 			display: flex;
-			flex-wrap: wrap;
-			max-width: 188px;
 			.recommendations_gallery_row_1 {
 				display: flex;
 				flex-wrap: wrap;
-				max-width: 75px;
+				flex-direction: column;
+				.recommendations_gallery_row_2 {
+					display: flex;
+					.recommendations_gallery_row_3 {
+						display: flex;
+						flex-direction: column;
+					}
+				}
 			}
 		}
 		.box {
-			border: 3px solid #FFFFFF;
+			border: 3px solid #031c2b;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -231,38 +244,45 @@ nav ul li a:hover:after {
 		.box_1 {
 			width: 300.5px;
 			height: 300.5px;
-			background-color: #031c2b;
+			border-bottom: 0;
+			
 		}
 		.box_2 {
 			width: 188px;
 			height: 188px;
-			background-color: #031c2b;
+			border-right: 0;
+			
 		}
 		.box_3 {
-			width: 37.5px;
-			height: 37.5px;
-			background-color: #031c2b;
+			width: 113px;
+			height: 113px;
+			border-bottom: 0;
+			
+			
+			
 		}
 		.box_4 {
 			width: 37.5px;
 			height: 37.5px;
-			background-color: #031c2b;
+			
+			
 			// border-left: 3px solid #FFFFFF;
 		}
 		.box_5 {
-			width: 75px;
-			height: 75px;
-			background-color: #031c2b;
+			width: 37.5px;
+			height: 37.5px;
+			border-top: 0;
+			
 		}
 		.box_6 {
-			width: 113px;
-			height: 113px;
-			background-color: #031c2b;
+			width: 75px;
+			height: 75px;
+			border-left: 0;
+	
 		}
 	}
 }
 
-// *****************  RECOMMENDATION *************
 
 
 
@@ -300,7 +320,7 @@ nav ul li a:hover:after {
 	}
 }
 
-@media only screen and (min-device-width: 360px) and (max-device-height: 900px) {
+@media (max-width: 480px)  {
 
 	.page_container {
 		padding-right: 30px;
