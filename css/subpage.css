@@ -163,28 +163,30 @@ nav ul li a:hover:after {
   display: inline-block;
   color: #031c2b; }
 
-#recommendations .recommendations_gallery {
-  padding: 23px 0 0 0;
-  margin: 0 auto; }
-  #recommendations .recommendations_gallery .recommendations_gallery_row {
-    min-width: 600px;
-    display: flex;
-    justify-content: space-between;
-    margin: 50px; }
-    #recommendations .recommendations_gallery .recommendations_gallery_row:first-of-type {
-      margin-top: 0; }
-    #recommendations .recommendations_gallery .recommendations_gallery_row .recommendations_gallery_box {
-      border: 1px solid rgba(3, 28, 43, 0.1);
-      border-radius: 4px;
-      box-shadow: 0 19px 38px rgba(3, 28, 43, 0.12), 0 6px 5px rgba(3, 28, 43, 0.15);
-      width: 170px;
-      height: 150px;
+#recommendations .recommendations_item {
+  display: flex; }
+  #recommendations .recommendations_item .recommendations_gallery {
+    align-self: flex-start;
+    padding: 23px 0 0 0; }
+    #recommendations .recommendations_item .recommendations_gallery .recommendations_gallery_row {
+      min-width: 600px;
       display: flex;
-      justify-content: center;
-      align-items: center; }
-    #recommendations .recommendations_gallery .recommendations_gallery_row img {
-      filter: drop-shadow(1px 1px 1px #222);
-      -webkit-filter: drop-shadow(1px 1px 1px #222); }
+      justify-content: space-between;
+      margin: 50px 50px 50px 0; }
+      #recommendations .recommendations_item .recommendations_gallery .recommendations_gallery_row:first-of-type {
+        margin-top: 0; }
+      #recommendations .recommendations_item .recommendations_gallery .recommendations_gallery_row .recommendations_gallery_box {
+        border: 1px solid rgba(3, 28, 43, 0.1);
+        border-radius: 4px;
+        box-shadow: 0 19px 38px rgba(3, 28, 43, 0.12), 0 2px 3px rgba(3, 28, 43, 0.15);
+        width: 170px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      #recommendations .recommendations_item .recommendations_gallery .recommendations_gallery_row img {
+        filter: drop-shadow(1px 1px 1px #222);
+        -webkit-filter: drop-shadow(1px 1px 1px #222); }
 
 @media (min-width: 3656px) {
   .page_container {
