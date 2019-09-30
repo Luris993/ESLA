@@ -148,6 +148,7 @@ nav ul li a:hover:after {
 	max-width: 700px;
 	min-height: 100vh;
 	.content_header {
+		align-self: flex-start;
 		font-size: 5rem;
 		color: #031c2b;
 		text-transform: uppercase;
@@ -223,6 +224,17 @@ nav ul li a:hover:after {
 			margin: 50px;
 			&:first-of-type {
 				margin-top: 0;
+			}
+			.recommendations_gallery_box {
+				border: 1px solid rgba(3, 28, 43, 0.1);
+				border-radius: 4px;
+				box-shadow: 0 19px 38px rgba(3, 28, 43, 0.12), 0 6px 5px rgba(3, 28, 43, 0.15);
+				width: 170px;
+				height: 150px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
 			}
 			img {
 				filter: drop-shadow(1px 1px 1px #222);
