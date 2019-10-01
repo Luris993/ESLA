@@ -228,7 +228,7 @@ nav ul li a:hover:after {
 				.recommendations_gallery_box {
 					border: 1px solid rgba(3, 28, 43, 0.1);
 					border-radius: 4px;
-					box-shadow: 0 19px 38px rgba(3, 28, 43, 0.10), 1px 1px 1px rgba(3, 28, 43, 0.10);
+					// box-shadow: 0 19px 38px rgba(3, 28, 43, 0.10), 0 0 0 rgba(3, 28, 43, 0.10);
 					width: 170px;
 					height: 150px;
 					display: flex;
@@ -321,10 +321,10 @@ nav ul li a:hover:after {
 			.recommendations_gallery {
 				padding: 23px 0 0 0;
 				.recommendations_gallery_row {
-					min-width: 300px;
 					display: flex;
 					flex-direction: row;
 					flex-wrap: wrap;
+					justify-content: space-between;
 					margin: 50px;
 					margin-left: 0;
 					&:first-of-type {
