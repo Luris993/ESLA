@@ -12,71 +12,71 @@ const logo = elementHeader.querySelector('.hero_logo');
 const fa_bars = toggleBtn.querySelector('.fa-bars');
 const fa_times = toggleBtn.querySelector('.fa-times');
 
-aboutButton.addEventListener('click', function(e) { 
+aboutButton.addEventListener('click', function (e) {
 	e.preventDefault();
-	
+
 	const href = 'about.html';
-	
+
 	footer.classList.remove('bounceInUp');
 	footer.classList.add('bounceOutDown');
-	
+
 	elementHeader.classList.remove('bounceInLeft');
 	elementHeader.classList.add('bounceOutLeft');
-	
-	elementHeader.addEventListener('animationend', function() {
+
+	elementHeader.addEventListener('animationend', function () {
 		window.location = href;
 	})
 });
 
-recommendationsButton.addEventListener('click', function(e) { 
+recommendationsButton.addEventListener('click', function (e) {
 	e.preventDefault();
-	
+
 	const href = 'recommendation.html';
-	
+
 	footer.classList.remove('bounceInUp');
 	footer.classList.add('bounceOutDown');
-	
+
 	elementHeader.classList.remove('bounceInLeft');
 	elementHeader.classList.add('bounceOutLeft');
-	
-	elementHeader.addEventListener('animationend', function() {
+
+	elementHeader.addEventListener('animationend', function () {
 		window.location = href;
 	})
 });
 
-teamButton.addEventListener('click', function(e) { 
-	e.preventDefault();
-	
-	const href = 'team.html';
-	
-	footer.classList.remove('bounceInUp');
-	footer.classList.add('bounceOutDown');	
-	
-	elementHeader.classList.remove('bounceInLeft');
-	elementHeader.classList.add('bounceOutLeft');
-	
-	elementHeader.addEventListener('animationend', function() {
-		window.location = href;
-	})
-});
+// teamButton.addEventListener('click', function(e) { 
+// 	e.preventDefault();
 
-contactButton.addEventListener('click', function(e) { 
+// 	const href = 'team.html';
+
+// 	footer.classList.remove('bounceInUp');
+// 	footer.classList.add('bounceOutDown');	
+
+// 	elementHeader.classList.remove('bounceInLeft');
+// 	elementHeader.classList.add('bounceOutLeft');
+
+// 	elementHeader.addEventListener('animationend', function() {
+// 		window.location = href;
+// 	})
+// });
+
+contactButton.addEventListener('click', function (e) {
 	e.preventDefault();
-	
+
 	const href = 'contact.html';
-	
+
 	footer.classList.remove('bounceInUp');
-	footer.classList.add('bounceOutDown');	
-	
+	footer.classList.add('bounceOutDown');
+
 	elementHeader.classList.remove('bounceInLeft');
 	elementHeader.classList.add('bounceOutLeft');
-	
-	elementHeader.addEventListener('animationend', function() {
+
+	elementHeader.addEventListener('animationend', function () {
 		window.location = href;
 	})
 });
 
-toggleBtn.addEventListener('click', function() {
+toggleBtn.addEventListener('click', function () {
 
 	fa_bars.classList.toggle('btn_open');
 	fa_times.classList.toggle('btn_close');
@@ -86,7 +86,7 @@ toggleBtn.addEventListener('click', function() {
 
 });
 
-logo.addEventListener('click', function(){
+logo.addEventListener('click', function () {
 
 	fa_bars.classList.toggle('btn_open');
 	fa_times.classList.toggle('btn_close');

@@ -48,10 +48,8 @@ body {
 	padding: 40px 0 0 0;
 	display: none;
 	.toggle_btn {
-		background: #031c2b;
-		border: 3px solid #031c2b;
-		border-radius: 100px;
-		width: 50px;
+		background: none;
+		border: 0;
 		.btn_close {
 			display: none;
 		}
@@ -59,8 +57,8 @@ body {
 			display: none;
 		}
 		i {
-			font-size: 2rem;
-			color: #FFFFFF;
+			font-size: 3rem;
+			color: #031c2b;
 		}
 	}
 	
@@ -142,10 +140,13 @@ nav ul li a:hover:after {
 .content {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	padding: 90px 0 0 0;
 	max-width: 700px;
 	min-height: 100vh;
 	.content_header {
+		align-self: flex-start;
 		font-size: 5rem;
 		color: #031c2b;
 		text-transform: uppercase;
@@ -207,62 +208,44 @@ nav ul li a:hover:after {
 }
 
 
+// *****************  RECOMMENDATION *************
+
 
 #recommendations {
-	.recommendations_gallery {
+	.recommendations_item {
 		display: flex;
-		padding: 23px 0 0 0;
-		.recommendations_gallery_row {
-			display: flex;
-			flex-wrap: wrap;
-			max-width: 188px;
-			.recommendations_gallery_row_1 {
+		.recommendations_gallery {
+			align-self: flex-start;
+			padding: 23px 0 0 0;
+			.recommendations_gallery_row {
+				min-width: 700px;
 				display: flex;
-				flex-wrap: wrap;
-				max-width: 75px;
+				justify-content: space-between;
+				margin: 50px 50px;
+				&:first-of-type {
+					margin-top: 0;
+				}
+				.recommendations_gallery_box {
+					border: 1px solid rgba(3, 28, 43, 0.1);
+					border-radius: 4px;
+					// box-shadow: 0 19px 38px rgba(3, 28, 43, 0.10), 0 0 0 rgba(3, 28, 43, 0.10);
+					width: 170px;
+					height: 150px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+
+				}
+				img {
+					filter: drop-shadow(1px 1px 1px #222);
+					-webkit-filter: drop-shadow(1px 1px 1px #222);
+				}
 			}
-		}
-		.box {
-			border: 3px solid #FFFFFF;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-		.box_1 {
-			width: 300.5px;
-			height: 300.5px;
-			background-color: #031c2b;
-		}
-		.box_2 {
-			width: 188px;
-			height: 188px;
-			background-color: #031c2b;
-		}
-		.box_3 {
-			width: 37.5px;
-			height: 37.5px;
-			background-color: #031c2b;
-		}
-		.box_4 {
-			width: 37.5px;
-			height: 37.5px;
-			background-color: #031c2b;
-			// border-left: 3px solid #FFFFFF;
-		}
-		.box_5 {
-			width: 75px;
-			height: 75px;
-			background-color: #031c2b;
-		}
-		.box_6 {
-			width: 113px;
-			height: 113px;
-			background-color: #031c2b;
 		}
 	}
 }
-
-// *****************  RECOMMENDATION *************
+		
+		
 
 
 
@@ -300,7 +283,7 @@ nav ul li a:hover:after {
 	}
 }
 
-@media only screen and (min-device-width: 360px) and (max-device-height: 900px) {
+@media (max-width: 480px)  {
 
 	.page_container {
 		padding-right: 30px;
@@ -329,6 +312,29 @@ nav ul li a:hover:after {
 			display: inline-block;
 			.visible_btn {
 				display: none;
+			}
+		}
+	}
+
+	#recommendations {
+		.recommendations_item {
+			.recommendations_gallery {
+				padding: 23px 0 0 0;
+				.recommendations_gallery_row {
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					margin: 50px;
+					margin-left: 0;
+					&:first-of-type {
+						margin-top: 0;
+					}
+					.recommendations_gallery_box {
+						width: 130px;
+						height: 130px;
+					}
+				}
 			}
 		}
 	}

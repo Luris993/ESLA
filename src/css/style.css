@@ -17,17 +17,15 @@ body {
   top: 40px;
   display: none; }
   .toggle_btn_container .toggle_btn {
-    background: #031c2b;
-    border: 3px solid #031c2b;
-    border-radius: 100px;
-    width: 50px; }
+    background: none;
+    border: none; }
     .toggle_btn_container .toggle_btn .btn_close {
       display: none; }
     .toggle_btn_container .toggle_btn .btn_open {
       display: none; }
     .toggle_btn_container .toggle_btn i {
-      font-size: 2rem;
-      color: #FFFFFF; }
+      font-size: 3rem;
+      color: #031c2b; }
 
 .page_header_animation {
   animation: 0.7s ease-out 0s 1 slideInFromLeft; }
@@ -119,7 +117,7 @@ nav ul li a:hover:after {
     .page_header .nav .header_nav .header_nav_item .header_nav_link {
       font-size: 1.4rem; } }
 
-@media only screen and (min-device-width: 360px) and (max-device-height: 900px) {
+@media (max-width: 480px) {
   .page_header .hero_logo {
     height: 150px; }
   .page_header .toggle_btn_container {
